@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Post Title -->
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Post Title" />
+
+    <!-- Post Body -->
+    <TextView
+        android:id="@+id/postBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        tools:text="Post body goes here..." />
+
+    <!-- Tags -->
+    <TextView
+        android:id="@+id/postTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="12sp"
+        tools:text="Tags: history, american, crime" />
+
+    <!-- Reactions and Views -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Likes -->
+        <TextView
+            android:id="@+id/postLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="12sp"
+            tools:text="Likes: 192" />
+
+        <!-- Dislikes -->
+        <TextView
+            android:id="@+id/postDislikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            tools:text="Dislikes: 25" />
+
+        <!-- Views -->
+        <TextView
+            android:id="@+id/postViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            tools:text="Views: 305" />
+    </LinearLayout>
+
+</LinearLayout>
