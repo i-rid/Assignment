@@ -72,4 +72,9 @@ class HomeFragment : Fragment() {
             }
         }
     }
+
+    private fun gotoDetailsFragment(data: String){
+        val action = HomeFragmentDirections.actionHomeFragmentToDetailsFragment(data)
+        findNavController().navigate(action)
+    }
 }
